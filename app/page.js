@@ -2,6 +2,7 @@
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Cards from '../components/Cards'
+import ContentBlock from '../components/ContentBlock'
 import CTA from '../components/CTA'
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Cards />
+      <ContentBlock />
       <CTA />
     </>
   )
