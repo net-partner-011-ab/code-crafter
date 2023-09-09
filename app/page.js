@@ -5,6 +5,7 @@ import Cards from '../components/Cards'
 import ContentBlock from '../components/ContentBlock'
 import Carousel from '../components/Carousel'
 import CTA from '../components/CTA'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ContentBlock />
       <Carousel />
       <CTA />
+      <Footer />
     </>
   )
 }
