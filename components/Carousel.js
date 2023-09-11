@@ -1,5 +1,8 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Image from "next/image";
+
+import placeholder from "../assets/img/1280x960.png"
 
 export default function ImageCarousel() {
   const responsive = {
@@ -50,34 +53,44 @@ export default function ImageCarousel() {
             arrows={true}
           >
             <div className="column">
-              <img
-                src="https://bulma.io/images/placeholders/1280x960.png"
-                alt=""
-              />
+                <Image
+                  src={placeholder} 
+                  alt=""
+                  width={1280}
+                  height={960}
+                />
             </div>
             <div className="column">
-              <img
-                src="https://bulma.io/images/placeholders/1280x960.png"
-                alt=""
-              />
+                <Image
+                  src={placeholder} 
+                  alt=""
+                  width={1280}
+                  height={960}
+                />
             </div>
             <div className="column">
-              <img
-                src="https://bulma.io/images/placeholders/1280x960.png"
-                alt=""
-              />
+                <Image
+                  src={placeholder} 
+                  alt=""
+                  width={1280}
+                  height={960}
+                />
             </div>
             <div className="column">
-              <img
-                src="https://bulma.io/images/placeholders/1280x960.png"
-                alt=""
-              />
+                <Image
+                  src={placeholder} 
+                  alt=""
+                  width={1280}
+                  height={960}
+                />
             </div>
             <div className="column">
-              <img
-                src="https://bulma.io/images/placeholders/1280x960.png"
-                alt=""
-              />
+                <Image
+                  src={placeholder} 
+                  alt=""
+                  width={1280}
+                  height={960}
+                />
             </div>
           </Carousel>
         </div>
