@@ -18,5 +18,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-multi-carousel": "^2.8.4"
+  },
+  "devDependencies": {
+    "sass": "^1.67.0"
   }
 }
