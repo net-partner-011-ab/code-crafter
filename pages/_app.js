@@ -1,6 +1,6 @@
 import App from "next/app";
 
-import "../app/globals.css";
+import "../app/styles/globals.scss";
 
 import Layout from "./layout";
 
