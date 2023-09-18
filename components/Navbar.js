@@ -39,13 +39,10 @@ export default function Navbar() {
         >
           <div className="navbar-start">
             <Link href="/" className="navbar-item">
-              Home
+              Landing Page
             </Link>
-            <Link href="/about" className="navbar-item">
-              About
-            </Link>
-            <Link href="/services" className="navbar-item">
-              Services
+            <Link href="/components" className="navbar-item">
+              Components
             </Link>
           </div>
 
