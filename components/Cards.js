@@ -1,3 +1,7 @@
+import Image from "next/image";
+
+import placeholder from "../assets/img/1280x960.png"
+
 export default function Cards() {
     return (
       <section className="section">
@@ -6,10 +10,12 @@ export default function Cards() {
             <div className="column card m-4">
               <div className="card-image">
                 <figure className="image is-4by3">
-                  <img
-                    src="https://bulma.io/images/placeholders/1280x960.png"
-                    alt="Placeholder image"
-                  />
+                <Image
+                  src={placeholder} 
+                  alt=""
+                  width={1280}
+                  height={960}
+                />
                 </figure>
               </div>
               <div className="card-content">
@@ -30,10 +36,12 @@ export default function Cards() {
             <div className="column card m-4">
               <div className="card-image">
                 <figure className="image is-4by3">
-                  <img
-                    src="https://bulma.io/images/placeholders/1280x960.png"
-                    alt="Placeholder image"
-                  />
+                <Image
+                  src={placeholder} 
+                  alt=""
+                  width={1280}
+                  height={960}
+                />
                 </figure>
               </div>
               <div className="card-content">
@@ -54,10 +62,12 @@ export default function Cards() {
             <div className="column card m-4">
               <div className="card-image">
                 <figure className="image is-4by3">
-                  <img
-                    src="https://bulma.io/images/placeholders/1280x960.png"
-                    alt="Placeholder image"
-                  />
+                <Image
+                  src={placeholder} 
+                  alt=""
+                  width={1280}
+                  height={960}
+                />
                 </figure>
               </div>
               <div className="card-content">

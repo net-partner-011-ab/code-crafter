@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import Link from "next/link"; 
+import Image from "next/image"
+
+import logo from "../assets/img/bulma-logo.png"
 
 export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
@@ -11,14 +15,14 @@ export default function Navbar() {
     <nav className="navbar is-white">
       <div className="container">
         <div className="navbar-brand">
-          <a className="navbar-item" href="/">
-            <img
-              src="https://bulma.io/images/bulma-logo.png"
-              alt="Bulma: a modern CSS framework based on Flexbox"
-              width="112"
-              height="28"
-            />
-          </a>
+          <Link href="/" className="navbar-item">
+              <Image
+                src={logo} 
+                alt=""
+                width={112}
+                height={28}
+              />
+          </Link>
           <div
             className={`navbar-burger ${isActive ? "is-active" : ""}`}
             onClick={handleBurgerClick}
@@ -34,15 +38,15 @@ export default function Navbar() {
           className={`navbar-menu ${isActive ? "is-active" : ""}`}
         >
           <div className="navbar-start">
-            <a className="navbar-item" href="/">
+            <Link href="/" className="navbar-item">
               Home
-            </a>
-            <a className="navbar-item" href="/about">
+            </Link>
+            <Link href="/about" className="navbar-item">
               About
-            </a>
-            <a className="navbar-item" href="/services">
+            </Link>
+            <Link href="/services" className="navbar-item">
               Services
-            </a>
+            </Link>
           </div>
 
           <div className="navbar-end">
@@ -51,12 +55,9 @@ export default function Navbar() {
                 <p className="control">
                 </p>
                 <p className="control">
-                  <a
-                    className="button is-black"
-                    href="/contact"
-                  >
-                    <span>Contact</span>
-                  </a>
+                  <Link href="/contact" className="button is-black">
+                   <span>Contact</span>
+                  </Link>
                 </p>
               </div>
             </div>
@@ -66,3 +67,8 @@ export default function Navbar() {
     </nav>
   );
 }
+
+
+
+
+
