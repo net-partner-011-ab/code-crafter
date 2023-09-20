@@ -2,9 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 
-import placeholder from "../assets/img/1280x960.png"
-
-export default function ImageCarousel() {
+export default function ImageCarousel({ title, subtitle, items }) {
   const responsive = {
     desktop: {
       breakpoint: {
@@ -16,7 +14,7 @@ export default function ImageCarousel() {
     },
     mobile: {
       breakpoint: {
-        max: 464,
+        max: 420,
         min: 0,
       },
       items: 1,
@@ -36,10 +34,9 @@ export default function ImageCarousel() {
     <section className="section has-background-white">
       <div className="container">
         <div className="info has-text-centered mb-4">
-          <h2 className="title">Image carousel title</h2>
+          <h2 className="title">{title}</h2>
           <h4 className="subtitle mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {subtitle}
           </h4>
         </div>
         <div id="carousel">
@@ -52,46 +49,16 @@ export default function ImageCarousel() {
             partialVisbile={true}
             arrows={true}
           >
-            <div className="column">
+            {items.map((item, index) => (
+              <div className="column" key={index}>
                 <Image
-                  src={placeholder} 
+                  src={item.url} 
                   alt=""
-                  width={1280}
-                  height={960}
+                  width={item.width}
+                  height={item.height}
                 />
-            </div>
-            <div className="column">
-                <Image
-                  src={placeholder} 
-                  alt=""
-                  width={1280}
-                  height={960}
-                />
-            </div>
-            <div className="column">
-                <Image
-                  src={placeholder} 
-                  alt=""
-                  width={1280}
-                  height={960}
-                />
-            </div>
-            <div className="column">
-                <Image
-                  src={placeholder} 
-                  alt=""
-                  width={1280}
-                  height={960}
-                />
-            </div>
-            <div className="column">
-                <Image
-                  src={placeholder} 
-                  alt=""
-                  width={1280}
-                  height={960}
-                />
-            </div>
+              </div>
+            ))}
           </Carousel>
         </div>
       </div>
