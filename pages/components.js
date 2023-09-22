@@ -33,7 +33,7 @@ export default function Components({ preview, allData }) {
         subtitle={subPage.carouselSubtitle}
         items={subPage.carouselImagesCollection.items}
       />
-      <ContactForm />
+      <ContactForm items={subPage.iconsListCollection.items}/>
     </>
   );
 }
