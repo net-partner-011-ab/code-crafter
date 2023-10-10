@@ -1,17 +1,21 @@
 {
   "name": "net-partner-starter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "version-patch": "bump patch --tag '%s' --commit '%s [ci skip]'",
+    "version-minor": "bump minor --tag '%s' --commit '%s [ci skip]'",
+    "version-major": "bump major --tag '%s' --commit '%s [ci skip]'"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.17.2",
     "@contentful/rich-text-types": "^16.3.0",
     "@fortawesome/fontawesome-free": "^6.4.2",
+    "@jsdevtools/version-bump-prompt": "^6.1.0",
     "aws-sdk": "^2.1453.0",
     "bulma": "^0.9.4",
     "eslint": "8.48.0",
