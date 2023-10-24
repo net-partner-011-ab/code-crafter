@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link"; 
 import Image from "next/image"
 
-import logo from "../assets/img/bulma-logo.png"
+import logo from "../assets/img/CC-logo-red.png"
 
 export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
@@ -19,7 +19,7 @@ export default function Navbar() {
               <Image
                 src={logo} 
                 alt=""
-                width={112}
+                width="100%"
                 height={28}
               />
           </Link>
