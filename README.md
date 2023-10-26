@@ -80,6 +80,49 @@ In the documentation related to Contentful, you can find all the necessary infor
 Below are examples of how they can be connected to the application. In the code itself you can find all the examples shown.
 
 ### Contentful
+
+It is optionally, but If you want to import our Contentful space through Contentful CLI, follow the next steps:
+
+#### 1. Locally installed `contentful-cli`
+
+Using Homebrew:
+```shell
+brew install contentful-cli
+```
+
+Using npm:
+```shell
+npm install -g contentful-cli
+```
+
+Using yarn:
+```shell
+yarn global add contentful-cli
+```
+
+#### 2. Authenticated with `contentful-cli`
+```shell
+contentful login --management-token <management-token>
+```
+
+#### 3. Connect to your Contentful space
+```shell
+contentful space use 
+```
+Then choose your space.
+
+#### 4. Importing content
+
+Go to the `lib` folder and run following command:
+```shell
+contentful space import --content-file config.json
+```
+
+After that, our content and content models will be imported to yours. You can find all the mentioned steps on the following link.
+
+[Importing and exporting content with the Contentful CLI](https://www.contentful.com/developers/docs/tutorials/cli/import-and-export/)
+
+
 A query is written in lib/api.js along with a functions that connects the Contact page to the Contentful content model.
 
 ```javascript
