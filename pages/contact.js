@@ -9,7 +9,11 @@ export default function Contact({ preview, allData }) {
 
   return (
     <>
-      <Hero title={contactPage.title} subtitle={contactPage.subtitle} />
+      <Hero 
+        title={contactPage.title} 
+        subtitle={contactPage.subtitle}
+        heroClass="is-primary" 
+      />
       <ContactForm items={contactPage.iconsListCollection.items} />
       <CTA />
     </>

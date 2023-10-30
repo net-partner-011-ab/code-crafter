@@ -15,7 +15,8 @@ export default function Components({ preview, allData }) {
     <>
       <Hero 
         title={subPage.title} 
-        subtitle={subPage.subtitle} 
+        subtitle={subPage.subtitle}
+        heroClass="is-medium is-success" 
       />
       <Text 
         title={subPage.textTitle}  

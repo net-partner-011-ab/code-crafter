@@ -1,11 +1,19 @@
 import Image from "next/image";
 
-export default function Hero({ title, subtitle, logos }) {
+export default function Hero({ title, subtitle, heroLogo, logos, heroClass }) {
   return (
-    <section className="hero is-large is-black">
+    <section className={`hero ${heroClass}`}>
       <div className="container">
         <div className="hero-body">
-          <p className="title pb-4 has-text-centered-mobile">{title}</p>
+          {heroLogo && (
+            <Image 
+              src={heroLogo}
+              alt="Hero logo"
+              width={120}
+              height={68}
+            />
+          )}
+          <p className="title pb-4 pt-4 has-text-centered-mobile">{title}</p>
           <p className="subtitle has-text-centered-mobile">
             {subtitle}
           </p>
