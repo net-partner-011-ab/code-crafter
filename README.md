@@ -2,6 +2,10 @@
 # CodeCrafter 
 Starter Kit :: Next.js and Bulma with connection to Contentful CMS and AWS SES contact form
 
+Demo link: https://net-partner-011-ab.github.io/code-crafter/
+
+#### CodeCrafter performance
+
 <img src="https://raw.githubusercontent.com/net-partner-011-ab/code-crafter/main/assets/img/screenshot-Code-Crafter.png" width="400">
 
 This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using [Contentful](https://www.contentful.com/) as the data source.
