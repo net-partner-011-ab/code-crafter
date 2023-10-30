@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:github": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "version-patch": "bump patch --tag '%s' --commit '%s [ci skip]'",
