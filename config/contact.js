@@ -5,7 +5,7 @@ export default async function sendEmail(req, res) {
 
     const params = {
         Destination: {
-            ToAddresses: ['slobodan.bajic@np011.se'],
+            ToAddresses: [process.env.NEXT_PUBLIC_EMAIL],
         },
         Message: {
             Body: {
@@ -13,7 +13,7 @@ export default async function sendEmail(req, res) {
             },
             Subject: { Data: 'New Contact Form Submission' },
         },
-        Source: 'slobodan.bajic@np011.se',
+        Source: process.env.NEXT_PUBLIC_EMAIL,
     };
 
     try {
