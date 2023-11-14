@@ -50,6 +50,7 @@ NEXT_PUBLIC_SITE_URL=...
 NEXT_PUBLIC_AWS_ACCESS_KEY_ID=...
 NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY=...
 NEXT_PUBLIC_AWS_REGION=...
+NEXT_PUBLIC_EMAIL=...
 
 ```
 #### 2. Local build
@@ -245,7 +246,7 @@ export default async function sendEmail(req, res) {
 
     const params = {
         Destination: {
-            ToAddresses: ['youremail@gmail.com'],
+            ToAddresses: [process.env.NEXT_PUBLIC_EMAIL],
         },
         Message: {
             Body: {
@@ -253,7 +254,7 @@ export default async function sendEmail(req, res) {
             },
             Subject: { Data: 'New Contact Form Submission' },
         },
-        Source: 'youremail@gmail.com',
+        Source: process.env.NEXT_PUBLIC_EMAIL,
     };
 
     try {
