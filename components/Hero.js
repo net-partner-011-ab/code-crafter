@@ -20,7 +20,7 @@ export default function Hero({ title, subtitle, heroLogo, logos, heroClass }) {
           {logos && (
             <div className="columns is-vcentered">
               {logos.map((logo, index) => (
-                <div key={index} className="column is-one-third">
+                <div key={index} className="column is-one-four">
                   <Image
                     src={logo.url} 
                     alt={logo.title}

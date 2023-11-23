@@ -17,7 +17,7 @@ export default function Index({preview, allData}) {
         subtitle={landingPage.subtitle}
         heroLogo={landingPage.heroLogo.url}
         logos={landingPage.techLogosCollection.items}
-        heroClass="is-large is-black"
+        heroClass="is-medium is-black"
       />
       <Cards 
         items={landingPage.cardsListCollection.items}
