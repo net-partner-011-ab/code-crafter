@@ -17,7 +17,7 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.17.2",
     "@contentful/rich-text-types": "^16.3.0",
-    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@fortawesome/fontawesome-free": "^6.5.1",
     "@jsdevtools/version-bump-prompt": "^6.1.0",
     "aws-sdk": "^2.1453.0",
     "bulma": "^0.9.4",
