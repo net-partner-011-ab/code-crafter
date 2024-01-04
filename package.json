@@ -22,7 +22,7 @@
     "aws-sdk": "^2.1509.0",
     "bulma": "^0.9.4",
     "eslint": "8.54.0",
-    "eslint-config-next": "14.0.3",
+    "eslint-config-next": "14.0.4",
     "next": "14.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
