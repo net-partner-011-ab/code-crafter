@@ -12,7 +12,7 @@
         "id": "landingPage",
         "type": "ContentType",
         "createdAt": "2023-09-11T07:15:45.564Z",
-        "updatedAt": "2023-10-23T12:41:53.081Z",
+        "updatedAt": "2024-01-09T09:32:08.656Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,8 +20,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 11,
-        "publishedAt": "2023-10-23T12:41:53.081Z",
+        "publishedVersion": 17,
+        "publishedAt": "2024-01-09T09:32:08.656Z",
         "firstPublishedAt": "2023-09-11T07:15:45.955Z",
         "createdBy": {
           "sys": {
@@ -37,8 +37,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 6,
-        "version": 12,
+        "publishedCounter": 9,
+        "version": 18,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -51,6 +51,18 @@
       "name": "Landing page",
       "description": "",
       "fields": [
+        {
+          "id": "heroLogo",
+          "name": "Hero logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
         {
           "id": "mainTitle",
           "name": "Main title",
@@ -220,6 +232,17 @@
             ],
             "linkType": "Asset"
           }
+        },
+        {
+          "id": "testNaslov",
+          "name": "Test naslov",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
         }
       ]
     },
@@ -235,7 +258,7 @@
         "id": "cards",
         "type": "ContentType",
         "createdAt": "2023-09-18T09:17:33.404Z",
-        "updatedAt": "2023-09-18T09:17:33.745Z",
+        "updatedAt": "2023-10-26T09:33:52.467Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -243,8 +266,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2023-09-18T09:17:33.745Z",
+        "publishedVersion": 3,
+        "publishedAt": "2023-10-26T09:33:52.467Z",
         "firstPublishedAt": "2023-09-18T09:17:33.745Z",
         "createdBy": {
           "sys": {
@@ -260,8 +283,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 2,
+        "version": 4,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -333,7 +356,7 @@
         "id": "subpage",
         "type": "ContentType",
         "createdAt": "2023-09-20T07:55:43.346Z",
-        "updatedAt": "2023-09-22T09:56:42.895Z",
+        "updatedAt": "2023-10-26T09:33:52.973Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -341,8 +364,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 7,
-        "publishedAt": "2023-09-22T09:56:42.895Z",
+        "publishedVersion": 9,
+        "publishedAt": "2023-10-26T09:33:52.973Z",
         "firstPublishedAt": "2023-09-20T07:55:43.719Z",
         "createdBy": {
           "sys": {
@@ -358,8 +381,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 4,
-        "version": 8,
+        "publishedCounter": 5,
+        "version": 10,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -583,7 +606,7 @@
         "id": "icons",
         "type": "ContentType",
         "createdAt": "2023-09-22T09:03:40.757Z",
-        "updatedAt": "2023-09-22T09:30:23.528Z",
+        "updatedAt": "2023-10-26T09:33:53.506Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -591,8 +614,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 7,
-        "publishedAt": "2023-09-22T09:30:23.528Z",
+        "publishedVersion": 9,
+        "publishedAt": "2023-10-26T09:33:53.506Z",
         "firstPublishedAt": "2023-09-22T09:03:41.152Z",
         "createdBy": {
           "sys": {
@@ -608,8 +631,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 4,
-        "version": 8,
+        "publishedCounter": 5,
+        "version": 10,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -670,7 +693,7 @@
         "id": "contactPage",
         "type": "ContentType",
         "createdAt": "2023-09-22T09:04:59.914Z",
-        "updatedAt": "2023-09-22T09:05:00.405Z",
+        "updatedAt": "2023-10-26T09:33:53.967Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -678,8 +701,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2023-09-22T09:05:00.405Z",
+        "publishedVersion": 3,
+        "publishedAt": "2023-10-26T09:33:53.967Z",
         "firstPublishedAt": "2023-09-22T09:05:00.405Z",
         "createdBy": {
           "sys": {
@@ -695,8 +718,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 2,
+        "version": 4,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -770,7 +793,7 @@
             "linkType": "Space"
           }
         },
-        "version": 12,
+        "version": 18,
         "createdAt": "2023-09-11T07:15:46.162Z",
         "createdBy": {
           "sys": {
@@ -779,7 +802,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-10-23T12:41:53.888Z",
+        "updatedAt": "2024-01-09T09:32:09.638Z",
         "updatedBy": {
           "sys": {
             "id": "2BepmeC7G3ZUIhAHv4qmm1",
@@ -803,6 +826,11 @@
         }
       },
       "controls": [
+        {
+          "fieldId": "heroLogo",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
         {
           "fieldId": "mainTitle",
           "widgetId": "singleLine",
@@ -852,6 +880,11 @@
           "fieldId": "carouselImages",
           "widgetId": "assetLinksEditor",
           "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "testNaslov",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         }
       ]
     },
@@ -866,7 +899,7 @@
             "linkType": "Space"
           }
         },
-        "version": 2,
+        "version": 4,
         "createdAt": "2023-09-18T09:17:33.919Z",
         "createdBy": {
           "sys": {
@@ -875,7 +908,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-09-18T09:17:34.513Z",
+        "updatedAt": "2023-10-26T09:33:55.009Z",
         "updatedBy": {
           "sys": {
             "id": "2BepmeC7G3ZUIhAHv4qmm1",
@@ -932,7 +965,7 @@
             "linkType": "Space"
           }
         },
-        "version": 8,
+        "version": 10,
         "createdAt": "2023-09-20T07:55:43.844Z",
         "createdBy": {
           "sys": {
@@ -941,7 +974,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-09-22T09:56:43.587Z",
+        "updatedAt": "2023-10-26T09:33:55.026Z",
         "updatedBy": {
           "sys": {
             "id": "2BepmeC7G3ZUIhAHv4qmm1",
@@ -1038,7 +1071,7 @@
             "linkType": "Space"
           }
         },
-        "version": 8,
+        "version": 10,
         "createdAt": "2023-09-22T09:03:41.339Z",
         "createdBy": {
           "sys": {
@@ -1047,7 +1080,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-09-22T09:30:24.309Z",
+        "updatedAt": "2023-10-26T09:33:54.669Z",
         "updatedBy": {
           "sys": {
             "id": "2BepmeC7G3ZUIhAHv4qmm1",
@@ -1099,7 +1132,7 @@
             "linkType": "Space"
           }
         },
-        "version": 2,
+        "version": 4,
         "createdAt": "2023-09-22T09:05:00.600Z",
         "createdBy": {
           "sys": {
@@ -1108,7 +1141,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-09-22T09:05:01.314Z",
+        "updatedAt": "2023-10-26T09:33:55.026Z",
         "updatedBy": {
           "sys": {
             "id": "2BepmeC7G3ZUIhAHv4qmm1",
@@ -1167,7 +1200,7 @@
         "id": "5hgRBsbxecpmBpcXESdkkb",
         "type": "Entry",
         "createdAt": "2023-09-11T07:15:53.316Z",
-        "updatedAt": "2023-10-23T12:43:29.069Z",
+        "updatedAt": "2024-01-09T09:32:45.810Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1175,8 +1208,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 26,
-        "publishedAt": "2023-10-23T12:43:29.069Z",
+        "publishedVersion": 34,
+        "publishedAt": "2024-01-09T09:32:45.810Z",
         "firstPublishedAt": "2023-09-11T07:16:20.160Z",
         "createdBy": {
           "sys": {
@@ -1192,8 +1225,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 5,
-        "version": 27,
+        "publishedCounter": 9,
+        "version": 35,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1212,6 +1245,15 @@
         }
       },
       "fields": {
+        "heroLogo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "0EsiUk6gdRNndOAdimNxf"
+            }
+          }
+        },
         "mainTitle": {
           "en-US": "Code Crafter Starter Template"
         },
@@ -1239,6 +1281,13 @@
                 "type": "Link",
                 "linkType": "Asset",
                 "id": "2SSLoGJCVE3HrlCT09x9rJ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "3vjhgGzywY1AkOelk8iaSL"
               }
             }
           ]
@@ -1342,6 +1391,9 @@
               }
             }
           ]
+        },
+        "testNaslov": {
+          "en-US": "Test"
         }
       }
     },
@@ -1361,7 +1413,7 @@
         "id": "1CeUP2Ixx4IQL7QQwDyosI",
         "type": "Entry",
         "createdAt": "2023-09-18T09:31:32.444Z",
-        "updatedAt": "2023-09-18T09:33:08.153Z",
+        "updatedAt": "2023-10-26T09:34:22.425Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1369,8 +1421,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 6,
-        "publishedAt": "2023-09-18T09:33:08.153Z",
+        "publishedVersion": 8,
+        "publishedAt": "2023-10-26T09:34:22.425Z",
         "firstPublishedAt": "2023-09-18T09:33:08.153Z",
         "createdBy": {
           "sys": {
@@ -1386,8 +1438,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 1,
-        "version": 7,
+        "publishedCounter": 2,
+        "version": 9,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1442,7 +1494,7 @@
         "id": "5TIbT96PiVbC6HY1XIZGBV",
         "type": "Entry",
         "createdAt": "2023-09-18T09:33:12.979Z",
-        "updatedAt": "2023-09-18T09:33:34.113Z",
+        "updatedAt": "2023-10-26T09:34:22.980Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1450,8 +1502,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2023-09-18T09:33:34.113Z",
+        "publishedVersion": 6,
+        "publishedAt": "2023-10-26T09:34:22.980Z",
         "firstPublishedAt": "2023-09-18T09:33:34.113Z",
         "createdBy": {
           "sys": {
@@ -1467,8 +1519,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 7,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1523,7 +1575,7 @@
         "id": "2lSevTGXGfyjLqqfZMRZh",
         "type": "Entry",
         "createdAt": "2023-09-18T09:33:41.112Z",
-        "updatedAt": "2023-09-18T09:33:59.836Z",
+        "updatedAt": "2023-10-26T09:34:23.483Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1531,8 +1583,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2023-09-18T09:33:59.836Z",
+        "publishedVersion": 5,
+        "publishedAt": "2023-10-26T09:34:23.483Z",
         "firstPublishedAt": "2023-09-18T09:33:59.836Z",
         "createdBy": {
           "sys": {
@@ -1548,8 +1600,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 1,
-        "version": 4,
+        "publishedCounter": 2,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1604,7 +1656,7 @@
         "id": "5OSaRcsOfaFuFHkC3pA6Cz",
         "type": "Entry",
         "createdAt": "2023-09-20T08:26:12.265Z",
-        "updatedAt": "2023-09-22T09:57:30.099Z",
+        "updatedAt": "2023-10-26T09:34:25.912Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1612,8 +1664,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 24,
-        "publishedAt": "2023-09-22T09:57:30.099Z",
+        "publishedVersion": 26,
+        "publishedAt": "2023-10-26T09:34:25.912Z",
         "firstPublishedAt": "2023-09-20T08:28:43.090Z",
         "createdBy": {
           "sys": {
@@ -1629,8 +1681,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 4,
-        "version": 25,
+        "publishedCounter": 5,
+        "version": 27,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1797,7 +1849,7 @@
         "id": "3wdTyY9UOd6xY8wphl597Z",
         "type": "Entry",
         "createdAt": "2023-09-22T09:05:17.317Z",
-        "updatedAt": "2023-09-22T09:09:38.882Z",
+        "updatedAt": "2023-10-26T09:34:25.377Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1805,8 +1857,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2023-09-22T09:09:38.882Z",
+        "publishedVersion": 7,
+        "publishedAt": "2023-10-26T09:34:25.377Z",
         "firstPublishedAt": "2023-09-22T09:09:38.882Z",
         "createdBy": {
           "sys": {
@@ -1822,8 +1874,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 1,
-        "version": 6,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1891,7 +1943,7 @@
         "id": "402eLQbEgSr2lrHI8OSkzn",
         "type": "Entry",
         "createdAt": "2023-09-22T09:05:53.967Z",
-        "updatedAt": "2023-09-22T09:30:58.987Z",
+        "updatedAt": "2023-10-26T09:34:23.941Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1899,8 +1951,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 6,
-        "publishedAt": "2023-09-22T09:30:58.987Z",
+        "publishedVersion": 8,
+        "publishedAt": "2023-10-26T09:34:23.941Z",
         "firstPublishedAt": "2023-09-22T09:07:41.065Z",
         "createdBy": {
           "sys": {
@@ -1916,8 +1968,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 2,
-        "version": 7,
+        "publishedCounter": 3,
+        "version": 9,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1969,7 +2021,7 @@
         "id": "1jc9gR5tuWSdnpes6WGw5X",
         "type": "Entry",
         "createdAt": "2023-09-22T09:08:12.028Z",
-        "updatedAt": "2023-09-22T09:31:08.833Z",
+        "updatedAt": "2023-10-26T09:34:24.402Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1977,8 +2029,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2023-09-22T09:31:08.833Z",
+        "publishedVersion": 7,
+        "publishedAt": "2023-10-26T09:34:24.402Z",
         "firstPublishedAt": "2023-09-22T09:08:57.235Z",
         "createdBy": {
           "sys": {
@@ -1994,8 +2046,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 2,
-        "version": 6,
+        "publishedCounter": 3,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2047,7 +2099,7 @@
         "id": "6N8asts2Oq1fLLKFshMjYQ",
         "type": "Entry",
         "createdAt": "2023-09-22T09:09:01.157Z",
-        "updatedAt": "2023-09-22T09:31:17.727Z",
+        "updatedAt": "2023-10-26T09:34:24.857Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2055,8 +2107,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2023-09-22T09:31:17.727Z",
+        "publishedVersion": 7,
+        "publishedAt": "2023-10-26T09:34:24.857Z",
         "firstPublishedAt": "2023-09-22T09:09:42.568Z",
         "createdBy": {
           "sys": {
@@ -2072,8 +2124,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 2,
-        "version": 6,
+        "publishedCounter": 3,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2127,7 +2179,7 @@
         "id": "3JhRy7pvqZGzPtIgmUPvH8",
         "type": "Asset",
         "createdAt": "2023-09-18T09:31:40.188Z",
-        "updatedAt": "2023-09-18T09:32:07.533Z",
+        "updatedAt": "2023-10-26T09:34:17.790Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2135,8 +2187,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2023-09-18T09:32:07.533Z",
+        "publishedVersion": 7,
+        "publishedAt": "2023-10-26T09:34:17.790Z",
         "firstPublishedAt": "2023-09-18T09:32:07.533Z",
         "createdBy": {
           "sys": {
@@ -2152,8 +2204,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2171,7 +2223,7 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/h35ntlumwupm/3JhRy7pvqZGzPtIgmUPvH8/70928bb55a03e8e74dd20ea56a0e1bee/1280x960.png",
+            "url": "//images.ctfassets.net/h35ntlumwupm/3JhRy7pvqZGzPtIgmUPvH8/d806e2452ff52771d1f4d7141caa1602/1280x960.png",
             "details": {
               "size": 35880,
               "image": {
@@ -2201,7 +2253,7 @@
         "id": "4HjbJgVXXgHqcuEUtUhzmK",
         "type": "Asset",
         "createdAt": "2023-09-22T09:07:03.356Z",
-        "updatedAt": "2023-09-22T09:07:35.461Z",
+        "updatedAt": "2023-10-26T09:34:18.252Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2209,8 +2261,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2023-09-22T09:07:35.461Z",
+        "publishedVersion": 7,
+        "publishedAt": "2023-10-26T09:34:18.252Z",
         "firstPublishedAt": "2023-09-22T09:07:35.461Z",
         "createdBy": {
           "sys": {
@@ -2226,8 +2278,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2245,7 +2297,7 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/h35ntlumwupm/4HjbJgVXXgHqcuEUtUhzmK/66e0a8c137a70bf15e13c7f656fcdcff/email.svg",
+            "url": "//images.ctfassets.net/h35ntlumwupm/4HjbJgVXXgHqcuEUtUhzmK/b0127ec9480befee5e80089a76af4177/email.svg",
             "details": {
               "size": 681,
               "image": {
@@ -2275,7 +2327,7 @@
         "id": "2LI1jVg3i8T7MiaK478ow5",
         "type": "Asset",
         "createdAt": "2023-09-22T09:08:39.458Z",
-        "updatedAt": "2023-09-22T09:08:53.726Z",
+        "updatedAt": "2023-10-26T09:34:18.629Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2283,8 +2335,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2023-09-22T09:08:53.726Z",
+        "publishedVersion": 7,
+        "publishedAt": "2023-10-26T09:34:18.629Z",
         "firstPublishedAt": "2023-09-22T09:08:53.726Z",
         "createdBy": {
           "sys": {
@@ -2300,8 +2352,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2319,7 +2371,7 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/h35ntlumwupm/2LI1jVg3i8T7MiaK478ow5/aeb83835f7321dcd57f1abd370f9b2f6/phone.svg",
+            "url": "//images.ctfassets.net/h35ntlumwupm/2LI1jVg3i8T7MiaK478ow5/f96cbb08f8ac71d39103efbcb4982cb3/phone.svg",
             "details": {
               "size": 863,
               "image": {
@@ -2349,7 +2401,7 @@
         "id": "1Y3j1Zw4Puje6v3zmIU7U4",
         "type": "Asset",
         "createdAt": "2023-09-22T09:09:18.749Z",
-        "updatedAt": "2023-09-22T09:09:32.502Z",
+        "updatedAt": "2023-10-26T09:34:18.976Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2357,8 +2409,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2023-09-22T09:09:32.502Z",
+        "publishedVersion": 7,
+        "publishedAt": "2023-10-26T09:34:18.976Z",
         "firstPublishedAt": "2023-09-22T09:09:32.502Z",
         "createdBy": {
           "sys": {
@@ -2374,8 +2426,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2393,7 +2445,7 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/h35ntlumwupm/1Y3j1Zw4Puje6v3zmIU7U4/7c6ef611c2e91c1a06ecccf0d7418d59/location.svg",
+            "url": "//images.ctfassets.net/h35ntlumwupm/1Y3j1Zw4Puje6v3zmIU7U4/4d912af854fdc19c29d3a34a43970074/location.svg",
             "details": {
               "size": 1202,
               "image": {
@@ -2423,7 +2475,7 @@
         "id": "2OzFf4VlMG73tjt1zKfhdC",
         "type": "Asset",
         "createdAt": "2023-10-23T12:42:03.096Z",
-        "updatedAt": "2023-10-23T13:07:29.954Z",
+        "updatedAt": "2023-10-26T09:34:19.367Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2431,8 +2483,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 15,
-        "publishedAt": "2023-10-23T13:07:29.954Z",
+        "publishedVersion": 18,
+        "publishedAt": "2023-10-26T09:34:19.367Z",
         "firstPublishedAt": "2023-10-23T12:42:25.934Z",
         "createdBy": {
           "sys": {
@@ -2448,8 +2500,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 3,
-        "version": 16,
+        "publishedCounter": 4,
+        "version": 19,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2467,7 +2519,7 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/h35ntlumwupm/2OzFf4VlMG73tjt1zKfhdC/af3311a51c10670d345e62e395c21721/next-js-icon-seeklogo.com.svg",
+            "url": "//images.ctfassets.net/h35ntlumwupm/2OzFf4VlMG73tjt1zKfhdC/a3895e1e8b0923f70e2815d925c5050a/next-js-icon-seeklogo.com.svg",
             "details": {
               "size": 1510,
               "image": {
@@ -2497,7 +2549,7 @@
         "id": "2vv79Hmp5yVnGTWK3Vj9F4",
         "type": "Asset",
         "createdAt": "2023-10-23T12:42:34.724Z",
-        "updatedAt": "2023-10-23T12:43:01.655Z",
+        "updatedAt": "2023-10-26T09:34:19.757Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2505,8 +2557,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2023-10-23T12:43:01.655Z",
+        "publishedVersion": 7,
+        "publishedAt": "2023-10-26T09:34:19.757Z",
         "firstPublishedAt": "2023-10-23T12:43:01.655Z",
         "createdBy": {
           "sys": {
@@ -2522,8 +2574,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2541,7 +2593,7 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/h35ntlumwupm/2vv79Hmp5yVnGTWK3Vj9F4/801599527a984de3077ee8ed0be88d3f/icons8-aws-logo-512.png",
+            "url": "//images.ctfassets.net/h35ntlumwupm/2vv79Hmp5yVnGTWK3Vj9F4/6d86bdde76d45468e670b8ad07ba4dcf/icons8-aws-logo-512.png",
             "details": {
               "size": 13732,
               "image": {
@@ -2571,7 +2623,7 @@
         "id": "2SSLoGJCVE3HrlCT09x9rJ",
         "type": "Asset",
         "createdAt": "2023-10-23T12:43:07.203Z",
-        "updatedAt": "2023-10-23T12:43:24.820Z",
+        "updatedAt": "2023-10-26T09:34:20.101Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2579,8 +2631,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2023-10-23T12:43:24.820Z",
+        "publishedVersion": 7,
+        "publishedAt": "2023-10-26T09:34:20.101Z",
         "firstPublishedAt": "2023-10-23T12:43:24.820Z",
         "createdBy": {
           "sys": {
@@ -2596,8 +2648,8 @@
             "id": "2BepmeC7G3ZUIhAHv4qmm1"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2615,7 +2667,7 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/h35ntlumwupm/2SSLoGJCVE3HrlCT09x9rJ/7ae25d5edaed04086567ad7567822f43/bulma-logo-white.png",
+            "url": "//images.ctfassets.net/h35ntlumwupm/2SSLoGJCVE3HrlCT09x9rJ/d0452f8ad3ebbc1520d925328f591b36/bulma-logo-white.png",
             "details": {
               "size": 3060,
               "image": {
@@ -2625,6 +2677,154 @@
             },
             "fileName": "bulma-logo-white.png",
             "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h35ntlumwupm"
+          }
+        },
+        "id": "0EsiUk6gdRNndOAdimNxf",
+        "type": "Asset",
+        "createdAt": "2023-10-30T12:49:39.118Z",
+        "updatedAt": "2023-10-30T13:51:48.002Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2023-10-30T13:51:48.002Z",
+        "firstPublishedAt": "2023-10-30T12:49:57.313Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2BepmeC7G3ZUIhAHv4qmm1"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2BepmeC7G3ZUIhAHv4qmm1"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2BepmeC7G3ZUIhAHv4qmm1"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Hero logo"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/h35ntlumwupm/0EsiUk6gdRNndOAdimNxf/ceb02044cddb9a0bd38c215487d44601/cc-logo-white.png",
+            "details": {
+              "size": 312543,
+              "image": {
+                "width": 2464,
+                "height": 2547
+              }
+            },
+            "fileName": "cc-logo-white.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h35ntlumwupm"
+          }
+        },
+        "id": "3vjhgGzywY1AkOelk8iaSL",
+        "type": "Asset",
+        "createdAt": "2023-11-22T09:40:36.283Z",
+        "updatedAt": "2023-11-22T10:11:28.089Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 28,
+        "publishedAt": "2023-11-22T10:11:28.089Z",
+        "firstPublishedAt": "2023-11-22T09:40:57.234Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2BepmeC7G3ZUIhAHv4qmm1"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2BepmeC7G3ZUIhAHv4qmm1"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 29,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2BepmeC7G3ZUIhAHv4qmm1"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Contentful"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/h35ntlumwupm/3vjhgGzywY1AkOelk8iaSL/98d09978566eb8ca93b8b928467b9cae/contentful-seeklogo.com.svg",
+            "details": {
+              "size": 2146,
+              "image": {
+                "width": 256,
+                "height": 289
+              }
+            },
+            "fileName": "contentful-seeklogo.com.svg",
+            "contentType": "image/svg+xml"
           }
         }
       }
