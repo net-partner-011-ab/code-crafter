@@ -55,6 +55,10 @@ NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY=...
 NEXT_PUBLIC_AWS_REGION=...
 NEXT_PUBLIC_EMAIL=...
 
+  <img src="https://raw.githubusercontent.com/net-partner-011-ab/code-crafter/ON-25/update-read-me/assets/img/Screenshot%202024-01-17%20at%2009.26.09.png" width="400">
+
+  <img src="https://raw.githubusercontent.com/net-partner-011-ab/code-crafter/ON-25/update-read-me/assets/img/Screenshot%202024-01-17%20at%2009.30.34.png" width="400">
+
 ```
 
 #### 2. Local installation of dependencies
@@ -143,6 +147,14 @@ Run following command:
 contentful space import --content-file lib/config.json
 ```
 
+#### 5. Exporting content
+
+```shell
+contentful space export --space-id
+```
+
+If new content models are added, it is necessary to perform an export and replace the old config.json with the new one.
+
 After that, our content and content models will be imported to yours. You can find all the mentioned steps on the following link.
 
 [Importing and exporting content with the Contentful CLI](https://www.contentful.com/developers/docs/tutorials/cli/import-and-export/)
@@ -171,9 +183,9 @@ async function fetchGraphQL(query, preview = false) {
   return fetch(
     `https://graphql.contentful.com/content/v1/spaces/${process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}`,
     {
-      method: "POST",
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
         Authorization: `Bearer ${
           preview
             ? process.env.NEXT_PUBLIC_CONTENTFUL_PREVIEW_ACCESS_TOKEN
@@ -192,7 +204,7 @@ function extractContactPageEntries(fetchResponse) {
 export async function getContactPage(preview) {
   const entries = await fetchGraphQL(
     `query {
-      contactPageCollection(limit: 50, preview: ${preview ? "true" : "false"}) {
+      contactPageCollection(limit: 50, preview: ${preview ? 'true' : 'false'}) {
           items {
             ${CONTACT_PAGE_FIELDS}
           }
@@ -207,10 +219,10 @@ export async function getContactPage(preview) {
 Then the function is imported on the Contact page and the data is accessed using the getStaticProps asynchronous function. An example is below.
 
 ```javascript
-import { getContactPage } from "../lib/api";
+import { getContactPage } from '../lib/api';
 
-import Hero from "../components/Hero";
-import ContactForm from "../components/ContactForm";
+import Hero from '../components/Hero';
+import ContactForm from '../components/ContactForm';
 
 export default function Contact({ preview, allData }) {
   const contactPage = allData[0];
@@ -238,7 +250,7 @@ In order for the form to be connected, valid credentials must be entered in the 
 #### 1. awsConfig.js file
 
 ```javascript
-import AWS from "aws-sdk";
+import AWS from 'aws-sdk';
 // Add credentials to .env
 AWS.config.update({
   accessKeyId: process.env.NEXT_PUBLIC_AWS_ACCESS_KEY_ID,
@@ -246,7 +258,7 @@ AWS.config.update({
   region: process.env.NEXT_PUBLIC_AWS_REGION,
 });
 
-const ses = new AWS.SES({ apiVersion: "2010-12-01" });
+const ses = new AWS.SES({ apiVersion: '2010-12-01' });
 
 export { ses };
 ```
@@ -254,7 +266,7 @@ export { ses };
 #### 2. config/contact.js file
 
 ```javascript
-import { ses } from "../awsConfig";
+import { ses } from '../awsConfig';
 
 export default async function sendEmail(req, res) {
   const { firstName, lastName, email, message } = req;
@@ -269,7 +281,7 @@ export default async function sendEmail(req, res) {
           Data: `Name: ${firstName} ${lastName}\nEmail: ${email}\nMessage: ${message}`,
         },
       },
-      Subject: { Data: "New Contact Form Submission" },
+      Subject: { Data: 'New Contact Form Submission' },
     },
     Source: process.env.NEXT_PUBLIC_EMAIL,
   };
@@ -277,7 +289,7 @@ export default async function sendEmail(req, res) {
   try {
     await ses.sendEmail(params).promise();
   } catch (error) {
-    console.error("Error sending email:", error);
+    console.error('Error sending email:', error);
   }
 }
 ```
