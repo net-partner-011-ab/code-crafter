@@ -1,5 +1,5 @@
+# CodeCrafter
 
-# CodeCrafter 
 Starter Kit :: Next.js and Bulma with connection to Contentful CMS and AWS SES contact form
 
 Demo link: https://net-partner-011-ab.github.io/code-crafter/
@@ -11,15 +11,18 @@ Demo link: https://net-partner-011-ab.github.io/code-crafter/
 This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using [Contentful](https://www.contentful.com/) as the data source.
 
 #### Starter kit contains 3 routes:
+
 ##### index.js - Landing page
+
 ##### components.js - Page with all created components
+
 ##### contact.js - Contact page containing a form
 
 ## Instructions
 
 Requirements:
 
-+ [Node.js](https://nodejs.org/en)
+- [Node.js](https://nodejs.org/en)
 
 Clone a project repository to your local computer and go to project folder
 
@@ -33,9 +36,9 @@ Clone a project repository to your local computer and go to project folder
 
 #### 1. To connect Contentful CMS and AWS SES with the application (Required step)
 
-Copy `.env.local.example` in the project root to `.env.local` and edit your preferences.
+Copy `.env.local.example` in the project root to `.env.local` and edit your preferences. It is necessary to create access keys and tokens in AWS and Contentful, they can't be left blank as shown in the example below, otherwise the application won't work. Links for AWS and Contentful can be found below in the documentation section.
 
-Example:  
+Example:
 
 ```dotenv
 
@@ -53,20 +56,30 @@ NEXT_PUBLIC_AWS_REGION=...
 NEXT_PUBLIC_EMAIL=...
 
 ```
-#### 2. Local build
+
+#### 2. Local installation of dependencies
+
+```shell
+npm install
+```
+
+#### 3. Local build
+
 ```shell
 npm run build
 ```
 
-#### 3. Start local server
+#### 4. Start local server
+
 ```shell
 npm run dev
 ```
 
-#### 4. Open page in local browser
+#### 5. Open page in local browser
+
 ```shell
 http://localhost:3000
-``` 
+```
 
 ## Documentation
 
@@ -77,7 +90,6 @@ http://localhost:3000
 [Contentful CMS](https://www.contentful.com/developers/docs/)
 
 [AWS SES](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/javascript_ses_code_examples.html)
-
 
 ## Usage/Examples
 
@@ -92,34 +104,41 @@ It is optionally, but If you want to import our Contentful space through Content
 #### 1. Locally installed `contentful-cli`
 
 Using Homebrew:
+
 ```shell
 brew install contentful-cli
 ```
 
 Using npm:
+
 ```shell
 npm install -g contentful-cli
 ```
 
 Using yarn:
+
 ```shell
 yarn global add contentful-cli
 ```
 
 #### 2. Authenticated with `contentful-cli`
+
 ```shell
 contentful login --management-token <management-token>
 ```
 
 #### 3. Connect to your Contentful space
+
 ```shell
-contentful space use 
+contentful space use
 ```
+
 Then choose your space.
 
 #### 4. Importing content
 
 Run following command:
+
 ```shell
 contentful space import --content-file lib/config.json
 ```
@@ -127,7 +146,6 @@ contentful space import --content-file lib/config.json
 After that, our content and content models will be imported to yours. You can find all the mentioned steps on the following link.
 
 [Importing and exporting content with the Contentful CLI](https://www.contentful.com/developers/docs/tutorials/cli/import-and-export/)
-
 
 A query is written in lib/api.js along with a functions that connects the Contact page to the Contentful content model.
 
@@ -174,9 +192,7 @@ function extractContactPageEntries(fetchResponse) {
 export async function getContactPage(preview) {
   const entries = await fetchGraphQL(
     `query {
-      contactPageCollection(limit: 50, preview: ${
-          preview ? "true" : "false"
-        }) {
+      contactPageCollection(limit: 50, preview: ${preview ? "true" : "false"}) {
           items {
             ${CONTACT_PAGE_FIELDS}
           }
@@ -213,7 +229,6 @@ export const getStaticProps = async ({ preview = false }) => {
     props: { preview, allData },
   };
 };
-
 ```
 
 ### AWS SES
@@ -223,15 +238,15 @@ In order for the form to be connected, valid credentials must be entered in the 
 #### 1. awsConfig.js file
 
 ```javascript
-import AWS from 'aws-sdk';
+import AWS from "aws-sdk";
 // Add credentials to .env
 AWS.config.update({
-    accessKeyId: process.env.NEXT_PUBLIC_AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY,
-    region: process.env.NEXT_PUBLIC_AWS_REGION,
+  accessKeyId: process.env.NEXT_PUBLIC_AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY,
+  region: process.env.NEXT_PUBLIC_AWS_REGION,
 });
 
-const ses = new AWS.SES({ apiVersion: '2010-12-01' });
+const ses = new AWS.SES({ apiVersion: "2010-12-01" });
 
 export { ses };
 ```
@@ -239,38 +254,41 @@ export { ses };
 #### 2. config/contact.js file
 
 ```javascript
-import { ses } from '../awsConfig';
+import { ses } from "../awsConfig";
 
 export default async function sendEmail(req, res) {
-    const { firstName, lastName, email, message } = req;
+  const { firstName, lastName, email, message } = req;
 
-    const params = {
-        Destination: {
-            ToAddresses: [process.env.NEXT_PUBLIC_EMAIL],
+  const params = {
+    Destination: {
+      ToAddresses: [process.env.NEXT_PUBLIC_EMAIL],
+    },
+    Message: {
+      Body: {
+        Text: {
+          Data: `Name: ${firstName} ${lastName}\nEmail: ${email}\nMessage: ${message}`,
         },
-        Message: {
-            Body: {
-                Text: { Data: `Name: ${firstName} ${lastName}\nEmail: ${email}\nMessage: ${message}` },
-            },
-            Subject: { Data: 'New Contact Form Submission' },
-        },
-        Source: process.env.NEXT_PUBLIC_EMAIL,
-    };
+      },
+      Subject: { Data: "New Contact Form Submission" },
+    },
+    Source: process.env.NEXT_PUBLIC_EMAIL,
+  };
 
-    try {
-        await ses.sendEmail(params).promise();
-    } catch (error) {
-        console.error('Error sending email:', error);
-    }
-} 
+  try {
+    await ses.sendEmail(params).promise();
+  } catch (error) {
+    console.error("Error sending email:", error);
+  }
+}
 ```
 
 #### 3. components/ContactForm.js file
+
 Import sendEmail and create handleSubmit function.
 
 In the ContactForm component, you can see how the handleSubmit function was performed.
 
-## Good to know 
+## Good to know
 
 Global components such as Navbar and Footer have been inserted into the layout.js component and are visible on every new page we create.
 
@@ -283,8 +301,3 @@ Global components such as Navbar and Footer have been inserted into the layout.j
 [@contentful/rich-text-react-renderer](https://www.npmjs.com/package/@contentful/rich-text-react-renderer)
 
 [@contentful/rich-text-types](https://www.npmjs.com/package/@contentful/rich-text-react-renderer)
-
-
-
-
-
