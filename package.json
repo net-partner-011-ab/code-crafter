@@ -21,7 +21,7 @@
     "@jsdevtools/version-bump-prompt": "^6.1.0",
     "aws-sdk": "^2.1509.0",
     "bulma": "^0.9.4",
-    "eslint": "8.56.0",
+    "eslint": "8.57.0",
     "eslint-config-next": "14.0.4",
     "next": "14.1.1",
     "react": "18.2.0",
