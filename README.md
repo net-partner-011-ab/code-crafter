@@ -58,9 +58,9 @@ NEXT_PUBLIC_EMAIL=...
 
 ```
 
-  <img src="https://raw.githubusercontent.com/net-partner-011-ab/code-crafter/ON-25/update-read-me/assets/img/Screenshot%202024-01-17%20at%2009.26.09.png" width="400">
+  <img src="https://raw.githubusercontent.com/net-partner-011-ab/code-crafter/main/assets/img/Screenshot%202024-01-17%20at%2009.26.09.png" width="400">
 
-  <img src="https://raw.githubusercontent.com/net-partner-011-ab/code-crafter/ON-25/update-read-me/assets/img/Screenshot%202024-01-17%20at%2009.30.34.png" width="400">
+  <img src="https://raw.githubusercontent.com/net-partner-011-ab/code-crafter/main/assets/img/Screenshot%202024-01-17%20at%2009.30.34.png" width="400">
 
 ````
 
