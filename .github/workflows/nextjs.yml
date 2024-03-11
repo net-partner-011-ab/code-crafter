@@ -1,13 +1,13 @@
 name: Deploy Next.js site to Pages
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
 permissions:
   contents: read
   pages: write
   id-token: write
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: '18'
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
