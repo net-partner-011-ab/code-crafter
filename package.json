@@ -19,7 +19,7 @@
     "@contentful/rich-text-types": "^16.8.4",
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@jsdevtools/version-bump-prompt": "^6.1.0",
-    "aws-sdk": "^2.1633.0",
+    "aws-sdk": "^2.1687.0",
     "bulma": "^1.0.2",
     "eslint": "9.4.0",
     "eslint-config-next": "14.1.4",
