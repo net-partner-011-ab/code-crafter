@@ -13,28 +13,28 @@ export default function Components({ preview, allData }) {
 
   return (
     <>
-      <Hero 
-        title={subPage.title} 
-        subtitle={subPage.subtitle}
-        heroClass="is-medium is-success" 
+      <Hero
+        title={subPage?.title}
+        subtitle={subPage?.subtitle}
+        heroClass="is-medium is-success"
       />
-      <Text 
-        title={subPage.textTitle}  
-        paragraph={subPage.textParagraph} 
+      <Text
+        title={subPage?.textTitle}
+        paragraph={subPage?.textParagraph}
       />
       <ContentBlock
-        title={subPage.contentBlockTitle}
-        subtitle={subPage.contentBlockSubtitle}
-        description={subPage.contentBlockText.json}
+        title={subPage?.contentBlockTitle}
+        subtitle={subPage?.contentBlockSubtitle}
+        description={subPage?.contentBlockText.json}
       />
       <CTA />
-      <Cards items={subPage.cardsListCollection.items} />
+      <Cards items={subPage?.cardsListCollection.items} />
       <ImageCarousel
-        title={subPage.carouselTitle}
-        subtitle={subPage.carouselSubtitle}
-        items={subPage.carouselImagesCollection.items}
+        title={subPage?.carouselTitle}
+        subtitle={subPage?.carouselSubtitle}
+        items={subPage?.carouselImagesCollection.items}
       />
-      <ContactForm items={subPage.iconsListCollection.items}/>
+      <ContactForm items={subPage?.iconsListCollection.items} />
     </>
   );
 }

@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:github": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "version-patch": "bump patch --tag '%s' --commit '%s [ci skip]'",
@@ -21,12 +20,13 @@
     "@jsdevtools/version-bump-prompt": "^6.1.0",
     "aws-sdk": "^2.1687.0",
     "bulma": "^1.0.2",
-    "eslint": "9.4.0",
+    "eslint": "^8.57.1",
     "eslint-config-next": "14.1.4",
-    "next": "14.2.3",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-multi-carousel": "^2.8.5"
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-multi-carousel": "^2.8.5",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.5.0",

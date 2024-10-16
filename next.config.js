@@ -5,10 +5,19 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')]
     },
+    reactStrictMode: false,
+    output: 'export',
     images: {
-        domains: ['images.ctfassets.net'],
         unoptimized: true,
-    }
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'images.ctfassets.net',
+                port: '',
+                pathname: '/**',
+            },
+        ],
+    },
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;

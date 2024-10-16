@@ -7,28 +7,29 @@ import ContentBlock from '../components/ContentBlock'
 import Carousel from '../components/Carousel'
 import CTA from '../components/CTA'
 
-export default function Index({preview, allData}) {
+export default function Index({ preview, allData }) {
   const landingPage = allData[0];
+  console.log('It works!')
 
   return (
     <>
-      <Hero 
-        title={landingPage.mainTitle} 
-        subtitle={landingPage.subtitle}
-        heroLogo={landingPage.heroLogo.url}
-        logos={landingPage.techLogosCollection.items}
+      <Hero
+        title={landingPage?.mainTitle || 'Default Title'}
+        subtitle={landingPage?.subtitle || 'Default Subtitle'}
+        heroLogo={landingPage?.heroLogo.url}
+        logos={landingPage?.techLogosCollection.items}
         heroClass="is-medium is-black"
       />
-      <Cards 
-        items={landingPage.cardsListCollection.items}
+      <Cards
+        items={landingPage?.cardsListCollection.items}
       />
-      <ContentBlock 
-        title={landingPage.contentBlockTitle}
-        subtitle={landingPage.contentBlockSubtitle}
-        description={landingPage.contentBlockText.json}
+      <ContentBlock
+        title={landingPage?.contentBlockTitle}
+        subtitle={landingPage?.contentBlockSubtitle}
+        description={landingPage?.contentBlockText.json}
       />
-      <Carousel 
-        items={landingPage.carouselImagesCollection.items}
+      <Carousel
+        items={landingPage?.carouselImagesCollection.items}
       />
       <CTA />
     </>
@@ -36,8 +37,8 @@ export default function Index({preview, allData}) {
 }
 
 export const getStaticProps = async ({ preview = false }) => {
-    const allData = (await getLandingPage(preview)) ?? [];
-    return {
-      props: { preview, allData },
-    };
+  const allData = (await getLandingPage(preview)) ?? [];
+  return {
+    props: { preview, allData },
   };
+};

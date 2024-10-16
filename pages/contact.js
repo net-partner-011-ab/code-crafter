@@ -6,15 +6,16 @@ import CTA from "../components/CTA";
 
 export default function Contact({ preview, allData }) {
   const contactPage = allData[0];
+  console.log("🚀 ~ Contact ~ contactPage:", contactPage)
 
   return (
     <>
-      <Hero 
-        title={contactPage.title} 
-        subtitle={contactPage.subtitle}
-        heroClass="is-primary" 
+      <Hero
+        title={contactPage?.title}
+        subtitle={contactPage?.subtitle}
+        heroClass="is-primary"
       />
-      <ContactForm items={contactPage.iconsListCollection.items} />
+      <ContactForm items={contactPage?.iconsListCollection.items} />
       <CTA />
     </>
   );
